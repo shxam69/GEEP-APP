@@ -1,0 +1,42 @@
+.dashboard-container {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.credits-banner {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.section-card {
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.tasks { background: linear-gradient(135deg, #f6d365, #fda085); }
+.challenges { background: linear-gradient(135deg, #84fab0, #8fd3f4); }
+.quiz { background: linear-gradient(135deg, #a1c4fd, #c2e9fb); }
+.game { background: linear-gradient(135deg, #fccb90, #d57eeb); }
+
+.game.locked {
+  filter: grayscale(80%);
+  opacity: 0.6;
+}
